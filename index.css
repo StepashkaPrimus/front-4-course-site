@@ -1,0 +1,131 @@
+body{
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 100%;
+    min-height: calc(100vh - 200px); /* Padding */
+    padding: 100px 140px;
+
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#first-block{
+    background-image: url("./img_1.png");
+}
+
+#second-block{
+    background-image: url("./img_2.png");
+}
+
+#third-block{
+    background-image: url("./img_3.png");
+}
+
+
+#second-block-header{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    /* or 100% */
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #DACDDF;
+
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 1);
+
+}
+
+
+#projects-container, #form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 70px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    border: none;
+    background-color: transparent;
+    background-position: center;
+
+    border-radius: 20%;
+
+    padding: 15px 45px;
+
+
+    max-width: 838px;
+    min-height: 343px;
+    background-size: cover;
+
+}
+
+.card-text__custom{
+    color: #8EF28C;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 1);
+    word-break: break-word;
+}
+
+.card-header__custom{
+    color: #B2D0B1;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    word-break: break-word;
+
+    text-shadow: 0 4px 4px rgba(0, 0, 0,1);
+}
+
+@media screen and (max-width: 1200px){
+    .block{
+        padding: 50px 70px;
+    }
+}
+
+@media screen and (max-width: 868px){
+    body{
+        font-size: 14px;
+    }
+    .block{
+        padding: 1rem 2rem;
+    }
+
+    #projects-container, #form {
+        grid-template-columns: 1fr;
+    }
+    .card-text__custom{
+        font-size: 1rem;
+    }
+    .card-header__custom {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <style>
+        .navbar-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .navbar-item {
+            margin: 1rem 1rem 1rem 3rem;
+            font-family: "Segoe UI";
+            letter-spacing: 0.1rem;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+            font-weight: 450;
+        }
+        .bg-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .text-introduce {
+            position: absolute;
+            text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+            top: 25%;
+            left: 30%;
+            font-size: xxx-large;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: left;
+        }
+        .btn {
+            position: absolute;
+            top: 40%;
+            left: 17.5%;
+            transform: translate(-50%, -50%);
+            background: #CE5903;
+            border-radius: 36px;
+            margin: 1.5rem;
+        }
+        .text-btn {
+            color: #B2D0B1;
+            font-size: 25px;
+            font-family: Manuale;
+            font-weight: 700;
+            text-transform: capitalize;
+            line-height: 40px;
+            letter-spacing: 5px;
+            word-wrap: break-word;
+            text-align: center;
+            text-decoration: none;
+        }
+        .text-label {
+            color: #DACDDF;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            font-size: larger;
+            top: 125%;
+            left: 60%;
+            scale: 3;
+            text-align: center;
+            margin-top: 5rem;
+        }
+        .card-text {
+            position: relative;
+            right: -7em;
+            top: -1em;
+            color: #8EF28C;
+            font-size: larger
+        }
+        .second-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container-content-first-row-pos {
+            position: absolute;
+            top: 140%;
+            left: 20%
+        }
+        
+    </style>
+</head>
+
+<body>
+<nav style="width: 100%;">
+    <div class="navbar-container">
+        <a href="" class="navbar-item">Telegram</a>
+        <a href="" class="navbar-item">vk</a>
+    </div>
+</nav>
+<div id="first-container" style="width: 100%; height: 100%">
+    <div style="flex: 1 0 30%">
+        <img src="img1.png">
+        <div style="display: flex; flex-direction: column; justify-content: center">
+            <div class="text-introduce">
+                <p><b>Анисимов Степан<br>Программист И Разработчик</b></p>
+                <p style="font-size: large"><b>Рабочее портфолио и сборник<br>проектов Анисимова Степана</b> </p>
+            </div>
+            <div id="btn" class="btn">
+                <a href="#form" class="text-btn">Мои проекты</a>
+            </div>
+        </div>
+    </div>
+    <div id="second-container" style="flex: 1 0 30%">
+        <img src="bg2.png">
+        <div class="second-container">
+            <div>
+                <p class="text-label"><br>Портфолио</p>
+            </div>
+            <div class="container-content-first-row-pos">
+                <div style="display: flex; flex-direction: row; align-items: center; justify-content: center">
+                    <div style="position: relative;  bottom: -2em; right: -6.5em">
+                        <div style="position: relative; width: 30em; height: 10em; background: url('image 1.png'); background-size: 100% 100%; border: none;">
+                            <i class="card-img-top; fa-solid fa-sack-dollar fa-3x" style="position: relative; right: -0.5em; bottom: -15px"></i>
+                            <div style="position: relative; bottom: -50px">
+                                <p class="card-text" style="color: #B2D0B1;">ПОЛЕ ЧУДЕС</p>
+                                <p class="card-text">СТАНЬ ПОБЕДИТЕЛЕМ ПО ЖИЗНИ</p>
+                            </div>
+                        </div>
+                    <div style="position: relative; width: 30em; height: 10em; bottom: 11em; right: -35em;  background: url('Rectangle 5.png'); background-size: 100% 100%; border: none;">
+                        <i style="position: relative; right: -15em; bottom: -15px"></i>
+                        <div style="position: relative;  bottom: -50px">
+                            <p class="card-text" style="position:relative; right: -7em; top: -1em; font-size: larger; color: #B2D0B1">МАГАЗИН ПО ПРОДАЖЕ ИГР</p>
+                            <p class="card-text" style="position: relative; right: -6em; top: -1em; font-size: larger; color: #8EF28C">ПРОДАВАЙ,ПОКУПАЙ,КАЙФУЙ</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row; align-items: center; justify-content: center">
+                    <div style="position: relative; width: 30em; height: 10em; left: 11.4rem; top: 15rem; margin-right: 5rem; background: url('Rectangle 9.png'); background-size: 100% 100%; border: none;">
+                        <i style="position: relative; right: -0.5em; bottom: -15px"></i>
+                        <div style="position: relative; bottom: -50px">
+                            <p class="card-text" style="color: #B2D0B1">СОЦ. СЕТЬ ФИТНЕСС ЦЕНТРА</p>
+                            <p class="card-text">ТРЕНИРУЙСЯ, ОБЩАЙСЯ, РАЗВИВАЙСЯ</p>
+                        </div>
+                    </div>
+                    <div style="position: relative; width: 30em; height: 10em; bottom: -15rem; right: 58.5rem; margin-right: 5rem; background: url('Rectangle 8.png'); background-size: 100% 100%; border: none;">
+                        <i style="position: relative; right: -0.5em; bottom: -15px"></i>
+                        <div style="position: relative; bottom: -50px">
+                            <p class=card-text style=" color: #B2D0B1">Система электронной коммерции для продажи товаров</p>
+                            <p class="card-text">РЕГИСТРИРУЙСЯ, ПОКУПАЙ, ПОЛУЧАЙ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="third-container" style="flex: 1 0 30%">
+        <img src="bg3.png" style="height: 100%;">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+            <div>
+                <p style="color: #32cd32; position: absolute; transform: translate(-50%, -50%); font-size: larger; top: 245%; left: 60%; scale: 3; text-align: center"><br>Личные Качества</p>
+            </div>
+            <div style="position: absolute; top: 250%; left: 20%">
+                <div style="display: flex; flex-direction: row; align-items: center; justify-content: center">
+                    <div style="position: relative;  bottom: -2em; right: -6.5em">
+                        <div style="position: relative; width: 30em; height: 10em; background: url('image 2.png'); background-size: 100% 100%; border: none;">
+                            <i  style="position: relative; right: -0.5em; bottom: -15px"></i>
+                            <div style="position: relative; bottom: -50px">
+                                <p class="card-text" style="color: #B2D0B1;">ПОЛЕ ЧУДЕС</p>
+                                <p class="card-text" style="color: #8EF28C;">СТАНЬ ПОБЕДИТИЛЕМ ПО ЖИЗНИ </p>
+                            </div>
+                        </div>
+                    <div style="position: relative; width: 30em; height: 10em; bottom: 11em; right: -35em;  background: url('Rectangle 4.png'); background-size: 100% 100%; border: none;">
+                        <i style="position: relative; right: -15em; bottom: -15px"></i>
+                        <div style="position: relative;  bottom: -50px">
+                            <p class="card-text" style="position:relative; right: -7em; top: -1em; font-size: larger; color: #B2D0B1">СОЦ. СЕТЬ ФИТНЕСС ЦЕНТРА</p>
+                            <p class="card-text" style="position: relative; right: -6em; top: -1em; font-size: larger; color: #8EF28C">ТРЕНИРУЙСЯ, ОБЩАЙСЯ, РАЗВИВАЙСЯ</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row; align-items: center; justify-content: center">
+                    <div style="position: relative; width: 30em; height: 10em; left: 11.4rem; top: 15rem; margin-right: 5rem; background: url('Rectangle 6.png'); background-size: 100% 100%; border: none;">
+                        <i style="position: relative; right: -0.5em; bottom: -15px"></i>
+                        <div style="position: relative; bottom: -50px">
+                            <p class="card-text" style=" color: #B2D0B1">Внимательность</p>
+                            <p class="card-text">Внимателен к данным, целям проекта и тд.</p>
+                        </div>
+                    </div>
+                    <div style="position: relative; width: 30em; height: 10em; bottom: -15rem; right: 58.5rem; margin-right: 5rem; background: url('Rectangle 7.png'); background-size: 100% 100%; border: none;">
+                        <i style="position: relative; right: -0.5em; bottom: -15px"></i>
+                        <div style="position: relative; bottom: -50px">
+                            <p class="text-btn">Умение читать и понимать код</p>
+                            <p style="position: relative; right: -2em; top: -3em; color: #66ff00;
+font-size: 10px;
+font-family: Manuale;
+font-weight: 700;
+text-transform: capitalize;
+line-height: 30px;
+letter-spacing: 1.50px;
+word-wrap: break-word">Хорошо понимаю чужой код<br>а, так же умею документировать свой собственный код.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
